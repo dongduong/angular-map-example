@@ -17,7 +17,23 @@
   <mat-drawer-container class="drawer-container">
     <mat-drawer mode="side" #drawer>Drawer content</mat-drawer>
     <mat-drawer-content>
-      
+      <mat-tab-group mat-align-tabs="center" disableRipple [@.disabled]="true">
+        <mat-tab label="Marker"> 
+          <ng-template matTabContent>
+            Marker
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Polygon">
+          <ng-template matTabContent>
+            Polygon
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Line">
+          <ng-template matTabContent>
+            Line
+          </ng-template>
+        </mat-tab>
+      </mat-tab-group>
     </mat-drawer-content>
   </mat-drawer-container>
 </div>
