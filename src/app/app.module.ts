@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MaterialModule} from './material-module';
+import { MarkerComponent } from './map/marker/marker.component';
+import { PolygonComponent } from './map/polygon/polygon.component';
+import { LineComponent } from './map/line/line.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarkerComponent,
+    PolygonComponent,
+    LineComponent
   ],
   imports: [
     BrowserModule,

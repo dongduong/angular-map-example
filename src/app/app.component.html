@@ -20,17 +20,17 @@
       <mat-tab-group mat-align-tabs="center" disableRipple [@.disabled]="true">
         <mat-tab label="Marker"> 
           <ng-template matTabContent>
-            Marker
+            <app-marker></app-marker>
           </ng-template>
         </mat-tab>
         <mat-tab label="Polygon">
           <ng-template matTabContent>
-            Polygon
+            <app-polygon></app-polygon>
           </ng-template>
         </mat-tab>
         <mat-tab label="Line">
           <ng-template matTabContent>
-            Line
+            <app-line></app-line>
           </ng-template>
         </mat-tab>
       </mat-tab-group>
